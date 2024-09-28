@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int [] nums = {1,4,3,9,5};
-        int target = 4;
+        int x=121;
+        int x2=-121;
 
-        System.out.println(Arrays.toString(solution.twoSum(nums,target)));
+        System.out.println("is the number: "+x+" ? "+solution.isPalindrome(x));
+        System.out.println("is the number: "+x2+" ? "+solution.isPalindrome(x2));
     }
 }

@@ -1,22 +1,19 @@
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-
-        int[] arr= new  int [2];
-        int s=0;
-
-        for(int i=0;i<nums.length;i++){
-            for (int j=i+1;j<nums.length;j++){
-                s=nums[i]+nums[j];
-                if (s==target){
-                    arr[0]=i;
-                    arr[1]=j;
-                    return arr;
-                }
-                else {
-                    s = s;
-                }
-            }
+    public boolean isPalindrome(int x) {
+        if(x<0) return false;
+        Integer x1= x;
+        String y = x1.toString();
+        StringBuilder sb = new StringBuilder("");
+        for(int i=y.length()-1;i>=0;i--){
+            sb.append(y.charAt(i));
         }
-        return arr;
+        if (y.equals(sb.toString())){//sb is an object .toString() to covert it to string
+            return true;
+        }
+        else {
+            return false;
+        }
+
+
     }
 }
